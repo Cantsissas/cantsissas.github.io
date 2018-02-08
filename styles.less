@@ -2,9 +2,33 @@
 	color:#d9d9d9;
 }
 
-.rowm{
+.rowm1,.rowm2{
 	padding-left:5em;
 	margin-top:5em;
+}
+
+.rowm1{
+    position: relative;
+    animation-name: mr;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+	@keyframes mr {
+    0%   {left:2500px;}
+    100% {left:0px; top:0px;}
+	}
+}
+
+.rowm2{
+    position: relative;
+    animation-name: ml;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+	@keyframes ml {
+    0%   {left:-2500px;}
+    100% {left:0px; top:0px;}
+	}
 }
 
 #pic {
